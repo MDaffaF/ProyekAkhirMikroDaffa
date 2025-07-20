@@ -96,7 +96,7 @@ void loop() {
   int statusSlot[SLOT];
 
   // ✅ Inisialisasi URL untuk ThingSpeak
-  String url = "api.thingspeak.com/update?api_key=" + apiKey;
+  String url = "https://api.thingspeak.com/update?api_key=" + apiKey;
 
   for (int i = 0; i < SLOT; i++) {
     jarakSlot[i] = bacaJarak(trigPins[i], echoPins[i]);
